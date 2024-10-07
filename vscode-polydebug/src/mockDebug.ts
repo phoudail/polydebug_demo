@@ -89,7 +89,9 @@ export class MockDebugSession extends LoggingDebugSession {
 	 */
 	public constructor(fileAccessor: FileAccessor) {
 		super("mock-debug.txt");
-		this._debugServer = spawn("docker", ["run", "-v", "/run/media/phoudail/homedir/phoudail/Code/polyglot_DAP/vscode-mock-debug/sampleWorkspace/:/run/media/phoudail/homedir/phoudail/Code/polyglot_DAP/vscode-mock-debug/sampleWorkspace/", "-i", "demo"]);
+
+		let workspacePath = "/run/media/phoudail/homedir/phoudail/Code/polyglot_DAP/vscode-polydebug";
+		this._debugServer = spawn("docker", ["run", "-v", `${workspacePath}/sampleWorkspace/:${workspacePath}/sampleWorkspace/`, "-i", "demo"]);
 		// this._debugServer.stdout.setEncoding('ascii');
 		// this._debugServer.stdin.setDefaultEncoding('ascii');
 		// this._debugServer.stdout.on("data", (data) => { console.log(`[LOG] Debugger responded with: ${data}`); });

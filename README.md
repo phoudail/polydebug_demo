@@ -1,0 +1,19 @@
+# PolyDebug demo
+
+This repository is a demo for the PolyDebug research tool, in the form of a VSCode extension.
+
+# Build and run
+
+You will need a working installation of docker, vscode, npm and yarn.
+
+First, build the actual PolyDebug tool:
+
+```bash
+cd LiveProbes
+docker build -t demo .
+cd ../
+```
+
+Then open the `vscode-polydebug` folder with Visual Studio Code. In `src/mockDebug.ts`, replace the `workspacePath` variable (line 93) with your own location.
+Go in the 'Run and Debug' side menu, select the 'Extension + Server' debug configuration and launch it. 
+A new VSCode instance should open, in which you can set breakpoints and debug polyglot programs.
