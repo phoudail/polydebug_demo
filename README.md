@@ -28,3 +28,4 @@ yarn
 Then open the `vscode-polydebug` folder with Visual Studio Code. In `src/mockDebug.ts`, replace the `workspacePath` variable (line 93) with your own location.
 Go in the 'Run and Debug' side menu, select the 'Extension + Server' debug configuration and launch it. 
 A new VSCode instance should open, in which you can set breakpoints and debug polyglot programs.
+Beware you need to specify an ABSOLUTE path to the `polyglotEval` function in the code; the provided examples under `vscode-polydebug/sampleWorkspace` will not work out of the box for this reason.
