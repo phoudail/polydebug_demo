@@ -6,10 +6,16 @@ This repository is a demo for the PolyDebug research tool, in the form of a VSCo
 
 You will need a working installation of docker, vscode, npm and yarn.
 
-First, build the actual PolyDebug tool:
+If you haven't already, update the submodules:
 
 ```bash
-cd LiveProbes
+git submodule update --init --recursive
+```
+
+Build the actual PolyDebug tool:
+
+```bash
+cd LiveProbes/
 docker build -t demo .
 cd ../
 ```
