@@ -15,9 +15,14 @@ git submodule update --init --recursive
 Build the actual PolyDebug tool:
 
 ```bash
-cd LiveProbes/
-docker build -t demo .
-cd ../
+docker build -t demo ./LiveProbes
+```
+
+Then build the extension:
+
+```bash
+cd vscode-polydebug/
+yarn
 ```
 
 Then open the `vscode-polydebug` folder with Visual Studio Code. In `src/mockDebug.ts`, replace the `workspacePath` variable (line 93) with your own location.
