@@ -1,0 +1,94 @@
+vscode-polydebug/out
+vscode-polydebug/dist
+vscode-polydebug/node_modules
+vscode-polydebug/.vscode-test/
+vscode-polydebug/npm-debug.log
+vscode-polydebug/mock-debug.txt
+vscode-polydebug/*.vsix
+vscode-polydebug/.DS_Store
+
+
+LiveProbes/JavaProbes/target/
+LiveProbes/JavaProbes/!.mvn/wrapper/maven-wrapper.jar
+LiveProbes/JavaProbes/!**/src/main/**/target/
+LiveProbes/JavaProbes/!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+LiveProbes/JavaProbes/.idea/modules.xml
+LiveProbes/JavaProbes/.idea/jarRepositories.xml
+LiveProbes/JavaProbes/.idea/compiler.xml
+LiveProbes/JavaProbes/.idea/libraries/
+LiveProbes/JavaProbes/*.iws
+LiveProbes/JavaProbes/*.iml
+LiveProbes/JavaProbes/*.ipr
+
+### Eclipse ###
+LiveProbes/JavaProbes/.apt_generated
+LiveProbes/JavaProbes/.classpath
+LiveProbes/JavaProbes/.factorypath
+LiveProbes/JavaProbes/.project
+LiveProbes/JavaProbes/.settings
+LiveProbes/JavaProbes/.springBeans
+LiveProbes/JavaProbes/.sts4-cache
+
+### NetBeans ###
+LiveProbes/JavaProbes//nbproject/private/
+LiveProbes/JavaProbes//nbbuild/
+LiveProbes/JavaProbes//dist/
+LiveProbes/JavaProbes//nbdist/
+LiveProbes/JavaProbes//.nb-gradle/
+LiveProbes/JavaProbes/build/
+LiveProbes/JavaProbes/!**/src/main/**/build/
+LiveProbes/JavaProbes/!**/src/test/**/build/
+
+### VS Code ###
+LiveProbes/JavaProbes/.vscode/
+
+### Mac OS ###
+LiveProbes/JavaProbes/.DS_Store
+
+LiveProbes/JavaProbes/.idea/*
+LiveProbes/JavaProbes/!.idea/.gitignore
+
+
+## LiveFromDAP ##
+LiveProbes/LiveFromDAP/.idea/
+LiveProbes/LiveFromDAP/.vscode/
+LiveProbes/LiveFromDAP/venv
+LiveProbes/LiveFromDAP/venv/
+
+LiveProbes/*.egg-info/
+# Remove all directory everywhere name __pycache__
+LiveProbes/LiveFromDAP/**/__pycache__/
+# Remove all file in directory named tmp excepted thos named .ignore
+LiveProbes/LiveFromDAP/**/tmp/*
+LiveProbes/!LiveFromDAP/**/tmp/.ignore
+
+LiveProbes/LiveFromDAP/src/livefromdap/bin/*
+LiveProbes/!LiveFromDAP/src/livefromdap/bin/.ignore
+
+LiveProbes/.vscode/
+
+LiveProbes/LiveFromDAP/src/livefromdap/target/**/*.so 
+LiveProbes/LiveFromDAP/src/livefromdap/target/**/*.class
+LiveProbes/LiveFromDAP/src/livefromdap/runner/c_runner
+LiveProbes/LiveFromDAP/src/livefromdap/runner/bin/*.class
+
+## paper ##
+# exclude evrery latex auxilary files
+LiveProbes/paper/*.aux
+LiveProbes/paper/*.bbl
+LiveProbes/paper/*.blg
+LiveProbes/paper/*.log
+LiveProbes/paper/*.out
+LiveProbes/paper/*.bcf
+LiveProbes/paper/*.fdb_latexmk
+LiveProbes/paper/*.fls
+LiveProbes/paper/*.run.xml
+
+LiveProbes/.idea/
+
+LiveProbes/*.synctex.gz
+LiveProbes/JavaProbes/tmp/*
+LiveProbes/!JavaProbes/tmp/.ignore
+LiveProbes/paper/paper.pdf
