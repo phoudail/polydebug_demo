@@ -1,4 +1,4 @@
-[submodule "LiveProbes"]
-	path = LiveProbes
-	url = git@github.com:phoudail/LiveProbes.git
+[submodule "LiveRec"]
+	path = LiveRec
+	url = git@github.com:diverse-project/LiveRec.git
 	branch = DAP_demo
